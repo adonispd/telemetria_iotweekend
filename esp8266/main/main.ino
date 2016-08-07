@@ -119,7 +119,8 @@ void reconnect() {
     int h = (int) dht.readHumidity();
     delay(2000);
     int t = (int) dht.readTemperature();
-    sprintf(msg,"Luz: %d   | Temp: %d *C  | Umid: %d %%", luminosidade, t, h);
+    //sprintf(msg,"Luz: %d   | Temp: %d *C  | Umid: %d %%", luminosidade, t, h);
+    sprintf(msg,"%d", luminosidade);
     
   }
     
