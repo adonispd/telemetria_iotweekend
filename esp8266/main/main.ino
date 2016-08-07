@@ -9,7 +9,8 @@ DHT dht(DHTPIN, DHTTYPE);
 const char* ssid     = "CrazyTechLabs";
 const char* password = "#iotweekend";
 
-const char* mqtt_server = "iot.eclipse.org";
+//const char* mqtt_server = "iot.eclipse.org";
+const char* mqtt_server = "test.mosquito.org";
 
 WiFiClient espClient;
 PubSubClient client(espClient);

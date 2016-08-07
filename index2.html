@@ -5,7 +5,7 @@
 
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 /*
 by @bordignon on twitter
@@ -17,9 +17,9 @@ public broker and topic you can use for testing.
 	var MQTTsubTopic = 'dcsquare/cubes/#'; //works with wildcard # and + topics dynamically now
 */
 //settings BEGIN
-	var MQTTbroker = 'iot.eclipse.org';
-	var MQTTport = 80;
-	var MQTTsubTopic = '/ws/adonispd'; //works with wildcard # and + topics dynamically now
+	var MQTTbroker = 'test.mosquitto.org';
+	var MQTTport = 8080;
+	var MQTTsubTopic = 'adonispd'; //works with wildcard # and + topics dynamically now
 //settings END
 	var chart; // global variuable for chart
 	var dataTopics = new Array();
